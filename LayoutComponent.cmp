@@ -1,0 +1,33 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" access="global" >
+    <aura:attribute name="fieldNamesString" type="String" default="" access="global" />
+    <aura:attribute name="fieldNames" type="String[]" access="global" />
+    <aura:attribute name="objectAPIName" type="String" access="global" />
+    <aura:attribute name="mode" type="String" access="global" default="view" />
+    <aura:attribute name="columns" type="Integer" access="global" default="2" />
+    <aura:attribute name="header" type="String" access="global"  />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:if isTrue="{!v.header == null || !v.header == '' }">
+        <!-- Do Nothing! -->
+        <aura:set attribute="else">
+            <div style="cursor: pointer; height: 33px; background-color: #f3f2f2; padding: 6px;" onclick="{!c.collapse}">
+                <section class="slds-clearfix">
+                    <div class="slds-float--left">
+                        <lightning:icon class="slds-show" aura:id="collapseSection" 
+                                        iconName="utility:chevrondown" size="x-small" alternativeText="Open"/>
+                        <lightning:icon class="slds-hide" aura:id="collapseSection" 
+                                        iconName="utility:chevronright" size="x-small" alternativeText="Closed"/>
+                    </div>
+                    <div class="slds-text-heading_small">&nbsp;{!v.header}</div>
+                </section>
+            </div>
+        </aura:set>
+    </aura:if> 
+    <div class="slds-p-around_small slds-show" aura:id="collapseSection">
+        <lightning:recordForm
+                              recordId="{!v.recordId}"
+                              objectApiName="{!v.objectAPIName}"
+                              fields="{!v.fieldNames}"
+                              columns="{!v.columns}"
+                              mode="{!v.mode}" />
+    </div>
+</aura:component>

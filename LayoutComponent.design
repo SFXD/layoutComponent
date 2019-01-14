@@ -1,0 +1,7 @@
+<design:component>
+    <design:attribute name="objectAPIName" label="Object API Name" description="API Name of the Object"  />
+    <design:attribute name="fieldNamesString" label="Field Names" description="API Field Names (Limit of 4000 Characters)"  />
+    <design:attribute name="header" label="Header Name" description="The header name of the section (leave blank for no header)"  />
+    <design:attribute name="mode" label="Mode" description="Can only be readonly, edit, or view" />
+    <design:attribute name="columns" label="# of Columns" description="Enter 1 or 2 columns" />
+</design:component>
