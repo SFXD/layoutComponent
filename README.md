@@ -7,9 +7,8 @@ Use a lightning component to render fields from any object, in 1 or 2 columns, c
 # Configure Layout Component
 This component can be used on any Lightning page.  Click edit page in the gear icon on a lightning page and click "Edit Page"
 Once inside the Lightning App Builder drag the Layout Component onto the Lightning Record Page.
-![dev org layout component drag](https://user-images.githubusercontent.com/20356405/51133383-c4bf2680-182c-11e9-91f5-3cbaf74abea1.gif
-https://user-images.githubusercontent.com/20356405/51133383-c4bf2680-182c-11e9-91f5-3cbaf74abea1.gif
-)
+
+![dev org layout component drag](https://user-images.githubusercontent.com/20356405/52106218-dc96f880-25e9-11e9-8bcd-b88db808391f.gif)
 
 # Edit the attributes
 * Field Names - Comma separated list of API Field names from object (limit 4000 characters)
@@ -20,9 +19,7 @@ https://user-images.githubusercontent.com/20356405/51133383-c4bf2680-182c-11e9-9
 * Number of Columns - Integer for number of columns (can only be 1 or 2)
 * Header - fill in the value for a header to create a collapisable section that mimics a Salesforce lightning page layout section
 
-![layout component 1 5](https://user-images.githubusercontent.com/20356405/52049251-3d202a00-2545-11e9-840b-9e0d1e20cb03.gif
-https://user-images.githubusercontent.com/20356405/52049251-3d202a00-2545-11e9-840b-9e0d1e20cb03.gif
-)
+![layout component 1 5](https://user-images.githubusercontent.com/20356405/52106213-d012a000-25e9-11e9-9836-7ef884c74ef0.gif)
 
 # Example Uses
 Use this component inside other lightning components to create a UI or inside certain experiences since it is global in scope.  Examples of component usage will be added in a separate folder.
