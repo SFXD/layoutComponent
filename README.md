@@ -25,8 +25,8 @@ Once inside the Lightning App Builder drag the Layout Component onto the Lightni
 Use this component inside other lightning components to create a UI or inside certain experiences since it is global in scope.  Examples of component usage will be added in a separate folder.
 
 # Shoutouts
-SFDCPanther - for teaching me lightning components
-SFDCMonkey - for teaching me lightning components
+* SFDCPanther - for teaching me lightning components
+* SFDCMonkey - for teaching me lightning components
 
 # Versions
 * 1.6 - Altered header functionality
