@@ -1,7 +1,7 @@
 Use a lightning component to render fields from any object, in 1 or 2 columns, change the mode, and add a header (optional). This package installs a lightning component in your org that can be used from any lightning page.
 
 # Installation
-* Install Link:  packaging/installPackage.apexp?p0=04t1Q000001MP7O
+* Install Link:  /packaging/installPackage.apexp?p0=04t1Q000001MP7Y
 * No Password
 
 # Configure Layout Component
