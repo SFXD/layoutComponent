@@ -1,14 +1,14 @@
 ({
     doInit : function(component, event, helper) {
-        var fieldNamesString = component.get("v.fieldNamesString");
-        var array = fieldNamesString.split(",");
-        component.set("v.fieldNames", array);
-    },
-    collapse : function(component, event, helper) {
-        var section = component.find('collapseSection');
-        for(var cmp in section) {
-            $A.util.toggleClass(section[cmp], 'slds-show');
-            $A.util.toggleClass(section[cmp], 'slds-hide');
+        let newFieldsArray = [];
+        let fieldNamesString = component.get("v.fieldNamesString");
+        if(fieldNamesString !== null && fieldNamesString !== undefined){
+            let fieldsArray = fieldNamesString.split(",");
+            for(let field of fieldsArray){
+                field = field.trim();
+                newFieldsArray.push(field);
+            }
+            component.set("v.fieldNames", newFieldsArray);
         }
     }
 })
